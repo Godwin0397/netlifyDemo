@@ -37,6 +37,14 @@
     font-size: 28px;
 }
 
+a:link{
+    background-color: red;
+}
+
+a:visited{
+    background-color: yellow;
+}
+
 h1{
     text-align: center;
 }
