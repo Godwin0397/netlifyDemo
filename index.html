@@ -5,8 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position Properties</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        @media screen and (min-width: 600px) {
+            body{
+                background-color: orange;
+            }
+            table,tr,th,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            td{
+                padding: 10px;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            body{
+                background-color: green;
+            }
+            table,tr,th,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            td{
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div>
+        <form action="submit">
+            <label for="firstName">FirstName:</label><br>
+            <input type="text" name="firstName" id="firstName"><br>
+            <label for="middleName">MiddleName:</label><br>
+            <input type="text" name="middleName" id="middleName"><br>
+            <label for="lastName">LastName:</label><br>
+            <input type="text" name="lastName" id="lastName"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" id="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="text" name="password" id="password"><br><br>
+            <input type="submit">
+        </form>
+    </div>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>State of health</th>
+            <th colspan="2">Fasting Value</th>
+            <th>After Remaining</th>
+        </tr>
+        <tr>
+            <td></td>
+            <th>Minimum</th>
+            <th>Normal</th>
+            <th>2 hours of Eating</th>
+        </tr>
+        <tr>
+            <td>healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>more than 126</td>
+            <td>Not Applicable</td>
+            <td>more than 200</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">Left</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-secondary">Right</button>
+    </div>
+
+</body>
+
+<!-- <body>
     <h1>Position Properties</h1>
     <div class="main sticky">
         <a href="./absolutePositionProperty.html" target="_blank">Absolute</a>
@@ -106,5 +194,5 @@
         
         The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
     </div>
-</body>
+</body> -->
 </html>
